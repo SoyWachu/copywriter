@@ -1,0 +1,3 @@
+export const SEND_TEXT = "SEND_TEXT";
+export const SEND_TEXT_SUCCESS = "SEND_TEXT_SUCCESS";
+export const SEND_TEXT_FAILURE = "SEND_TEXT_FAILURE";
