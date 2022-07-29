@@ -6,8 +6,9 @@
   "scripts": {
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
-    "server": "nodemon server.js",
+    "heroku-postbuild": "npm run install-client npm run install-api && npm run build",
+    "server": "cd api && npm start",
+    "install-api": "cd api && npm install",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
   },
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/SoyWachu/copywriter/issues"
   },
-  "homepage": "https://github.com/SoyWachu/copywriter#readme"
+  "homepage": "https://github.com/SoyWachu/copywriter#readme",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
 }
