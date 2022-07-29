@@ -5,6 +5,7 @@ import routes from "./routes/index.js";
 
 const app = express();
 
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 

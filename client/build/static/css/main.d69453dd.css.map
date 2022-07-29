@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.d69453dd.css","mappings":"AAAA,KAGE,wBAA2B,CAD3B,QAAS,CADT,SAGF","sources":["App.css"],"sourcesContent":["body {\n  padding: 0;\n  margin: 0;\n  background-color: lightgrey;\n}\n"],"names":[],"sourceRoot":""}
